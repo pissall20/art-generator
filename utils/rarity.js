@@ -76,6 +76,7 @@ for (var layer in rarityData) {
   }
 }
 
+
 // print out rarity data
 for (var layer in rarityData) {
   console.log(`Trait type: ${layer}`);
@@ -84,3 +85,15 @@ for (var layer in rarityData) {
   }
   console.log();
 }
+
+var rarityDict = Object.assign({}, rarityData);
+var jsonContent = JSON.stringify(rarityDict);
+
+fs.writeFile(`${basePath}/build/rarity.json`, jsonContent, 'utf8', function (err) {
+  if (err) {
+      console.log("An error occured while writing JSON Object to File.");
+      return console.log(err);
+  }
+
+  console.log("JSON file has been saved.");
+});
