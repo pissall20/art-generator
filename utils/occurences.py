@@ -22,9 +22,9 @@ final_df.to_csv("../build/image_traits.csv", index=False)
 
 occurence_dict = dict()
 for col in value_df.columns:
-    abc = value_df[col].value_counts().to_dict()
-    bcd = value_df[col].value_counts(normalize=True).to_dict()
-    ds = [abc, bcd]
+    counts = value_df[col].value_counts().to_dict()
+    count_percent = value_df[col].value_counts(normalize=True).to_dict()
+    ds = [counts, count_percent]
     d = {}
     for k in abc.keys():
         d[k] = tuple(d[k] for d in ds)
