@@ -14,22 +14,19 @@ const description = "Zombivali - Sa Re Ga Ma";
 const baseUri = "https://www.rpsg.in";
 
 
-// Collection starts from 0 automatically
+// Collection starts from 1 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 40,
+    growEditionSizeTo: 10,
     layersOrder: [
-      { name: "1. background" },
-      { name: "2. base" },
-      { name: "3. skin" },
-      { name: "4. headgear" },
-      { name: "5. ear" },
-      { name: "6. eyes" },
-      { name: "7. nose" },
-      { name: "8. mouth" },
-      { name: "9. cloth" },
-      { name: "10. neck gear" },
-      { name: "11. hand gears" },
+      { name: "Background" },
+      { name: "Bottom lid" },
+      { name: "Eye color" },
+      { name: "Eyeball" },
+      { name: "Goo" },
+      { name: "Iris" },
+      { name: "Shine" },
+      { name: "Top lid" },
     ],
   }
 ];
