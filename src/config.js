@@ -8,13 +8,15 @@ const { NETWORK } = require(path.join(basePath, "constants/network.js"));
 
 const network = NETWORK.eth;
 
-// General metadata 
+// General metadata - to be updated for every project. 
+// Can also be done after generation, update here and use command 'npm run update_info'
 const namePrefix = "Zombies of Zombivali";
 const description = "Zombivali - Sa Re Ga Ma";
 const baseUri = "https://www.rpsg.in";
 
 
-// Collection starts from 1 automatically
+// Write the layers in the correct sequence below
+// growEditionSizeTo is the number of images
 const layerConfigurations = [
   {
     growEditionSizeTo: 10,
@@ -33,13 +35,17 @@ const layerConfigurations = [
 
 const shuffleLayerConfigurations = false;
 
+// To set verbosity - To print debug logs or not. Set true for higher verbosity
 const debugLogs = false;
 
+// Set the input and output size of the images
 const format = {
   width: 2000,
   height: 2000,
 };
 
+// To expore gif of generation process of every image
+// Set false to improve performance
 const gif = {
   export: false,
   repeat: 0,
@@ -47,6 +53,7 @@ const gif = {
   delay: 500,
 };
 
+// DO NOT SET THIS TO true, it only prints text on canvas
 const text = {
   only: false,
   color: "#ffffff",
@@ -60,6 +67,7 @@ const text = {
   spacer: " => ",
 };
 
+// Format for pixelating images
 const pixelFormat = {
   ratio: 2 / 128,
 };
@@ -71,6 +79,8 @@ const background = {
   default: "#000000",
 };
 
+
+// Any extra metadata to be added to the json files
 const extraMetadata = {
   creator: "Mooz.One, NME, 404",
 };
