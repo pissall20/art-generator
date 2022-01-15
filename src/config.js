@@ -14,21 +14,49 @@ const namePrefix = "Zombies of Zombivali";
 const description = "Zombivali - Sa Re Ga Ma";
 const baseUri = "https://www.rpsg.in";
 
+/*
+background
+skins
+clothes
+eyes
+nose
+mouth
+ear
+headgear
+neck
+handprop
+*/
+
 
 // Write the layers in the correct sequence below
 // growEditionSizeTo is the number of images
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 100,
     layersOrder: [
-      { name: "Background" },
-      { name: "Bottom lid" },
-      { name: "Eye color" },
-      { name: "Eyeball" },
-      { name: "Goo" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Top lid" },
+      { name: "background_male" },
+      { name: "skins_male" },
+      { name: "clothes_male" },
+      { name: "nose_male" },
+      { name: "mouth_male" },
+      { name: "ear_male" },
+      { name: "headgear_male" },
+      { name: "neck_male" },
+      { name: "handprop_male" },
+    ],
+  },
+  {
+    growEditionSizeTo: 200,
+    layersOrder: [
+      { name: "background_female" },
+      { name: "skins_female" },
+      { name: "clothes_female" },
+      { name: "nose_female" },
+      { name: "mouth_female" },
+      { name: "ear_female" },
+      { name: "headgear_female" },
+      { name: "neck_female" },
+      { name: "handprop_female" },
     ],
   }
 ];
