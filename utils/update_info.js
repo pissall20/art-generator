@@ -12,7 +12,6 @@ const {
   description,
   namePrefix,
   network,
-  solanaMetadata,
 } = require(path.join(basePath, "/src/config.js"));
 
 // read json data
