@@ -9,7 +9,7 @@ const { NETWORK } = require(path.join(basePath, "constants/network.js"));
 const network = NETWORK.eth;
 
 // General metadata 
-const namePrefix = "Zombivali Collection 1";
+const namePrefix = "Zombies of Zombivali";
 const description = "Zombivali - Sa Re Ga Ma";
 const baseUri = "https://www.rpsg.in";
 
@@ -41,7 +41,7 @@ const format = {
 };
 
 const gif = {
-  export: true,
+  export: false,
   repeat: 0,
   quality: 100,
   delay: 500,
