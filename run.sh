@@ -14,5 +14,5 @@ pip install pandas
 npm run build
 
 # Run python program to create rarity and occurences for NFT partner
-cd utils && python occurences.py
+cd utils && python3 occurences.py
 
