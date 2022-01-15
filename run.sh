@@ -11,7 +11,8 @@ npm install
 # Install required python dependencies
 pip install pandas
 # Start the generation process. Save the screen output to a file
-npm run build > npm_generation.log
+npm run build
+
 # Run python program to create rarity and occurences for NFT partner
-python utils/occurences.py
+cd utils && python occurences.py
 
