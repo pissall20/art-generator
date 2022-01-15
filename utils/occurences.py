@@ -26,7 +26,7 @@ for col in value_df.columns:
     count_percent = value_df[col].value_counts(normalize=True).to_dict()
     ds = [counts, count_percent]
     d = {}
-    for k in abc.keys():
+    for k in counts.keys():
         d[k] = tuple(d[k] for d in ds)
     occurence_dict[col] = d
     
