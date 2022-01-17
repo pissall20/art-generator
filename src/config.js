@@ -32,31 +32,33 @@ handprop
 // growEditionSizeTo is the number of images
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
-    layersOrder: [
-      { name: "background_male" },
-      { name: "skins_male" },
-      { name: "clothes_male" },
-      { name: "nose_male" },
-      { name: "mouth_male" },
-      { name: "ear_male" },
-      { name: "headgear_male" },
-      { name: "neck_male" },
-      { name: "handprop_male" },
-    ],
-  },
-  {
-    growEditionSizeTo: 200,
+    growEditionSizeTo: 3750,
     layersOrder: [
       { name: "background_female" },
       { name: "skins_female" },
       { name: "clothes_female" },
-      { name: "nose_female" },
-      { name: "mouth_female" },
       { name: "ear_female" },
       { name: "headgear_female" },
+      { name: "eyes_female" },
+      { name: "nose_female" },
+      { name: "mouth_female" },
       { name: "neck_female" },
       { name: "handprop_female" },
+    ],
+  },
+  {
+    growEditionSizeTo: 15000,
+    layersOrder: [
+      { name: "background_male" },
+      { name: "skins_male" },
+      { name: "clothes_male" },
+      { name: "ear_male" },
+      { name: "headgear_male" },
+      { name: "eyes_male" },
+      { name: "nose_male" },
+      { name: "mouth_male" },
+      { name: "neck_male" },
+      { name: "handprop_male" },
     ],
   }
 ];
