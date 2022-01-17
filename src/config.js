@@ -10,7 +10,7 @@ const network = NETWORK.eth;
 
 // General metadata - to be updated for every project. 
 // Can also be done after generation, update here and use command 'npm run update_info'
-const namePrefix = "Zombies of Zombivali";
+const namePrefix = "Zombies of Zombiville";
 const description = "Zombivali - Sa Re Ga Ma";
 const baseUri = "https://www.rpsg.in";
 
